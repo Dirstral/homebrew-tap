@@ -5,21 +5,21 @@
 class Dirstral < Formula
   desc "Interactive TUI client for dir2mcp knowledge bases."
   homepage "https://github.com/Dirstral/dir2mcp"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.3.0/dirstral_0.3.0_darwin_amd64.tar.gz"
-      sha256 "0668ad638a1483b2b6cc05884cd88f6ddee3c02efee157f559feddc329c7e8a9"
+      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.4.0/dirstral_0.4.0_darwin_amd64.tar.gz"
+      sha256 "454eec7294c10bfaf0b67b7e47479d76f3464518e48ec15e8d44ee76992435cf"
 
       define_method(:install) do
         bin.install "dirstral"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.3.0/dirstral_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b377bc9beb206bcae5076297b673f6bf9029957355c2e273098a68beffd8ab63"
+      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.4.0/dirstral_0.4.0_darwin_arm64.tar.gz"
+      sha256 "d7ae712ac58c9a27bd3ae6ad260d30c2c5ef8aeaf27d4c40b9d125ce08bd5745"
 
       define_method(:install) do
         bin.install "dirstral"
@@ -29,15 +29,15 @@ class Dirstral < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.3.0/dirstral_0.3.0_linux_amd64.tar.gz"
-      sha256 "52ad42c96bec56cd0e716cb1cc4c46d7a2cf51826e7ed483f27a45a47992400b"
+      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.4.0/dirstral_0.4.0_linux_amd64.tar.gz"
+      sha256 "603489829b55ad5c358564ff41e1e67b822739eaacab2f989e425df0eb0f6f3d"
       define_method(:install) do
         bin.install "dirstral"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.3.0/dirstral_0.3.0_linux_arm64.tar.gz"
-      sha256 "d90db2c014a961ecf19137b3c475e5a3a48d5afad1e2396bb658baf92a6d4523"
+      url "https://github.com/Dirstral/dir2mcp/releases/download/v0.4.0/dirstral_0.4.0_linux_arm64.tar.gz"
+      sha256 "e2ed2a53814db3a51adaf218e38d5813cd6de2c6fceb14943e528d06ebc485d6"
       define_method(:install) do
         bin.install "dirstral"
       end
