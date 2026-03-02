@@ -1,2 +1,39 @@
 # homebrew-tap
-Homebrew tap for Dirstral CLI tools, including dir2mcp release formulas.
+
+Homebrew tap for [dir2mcp](https://github.com/Dirstral/dir2mcp) — index any local directory and serve it as a private MCP knowledge server.
+
+## Install
+
+```sh
+brew tap Dirstral/tap
+```
+
+Install the MCP server:
+
+```sh
+brew install dir2mcp
+```
+
+Install the interactive TUI client:
+
+```sh
+brew install dirstral
+```
+
+## Upgrade
+
+```sh
+brew upgrade dir2mcp
+brew upgrade dirstral
+```
+
+## Formulas
+
+| Formula | Description |
+|---------|-------------|
+| `dir2mcp` | Index any local directory and serve it as a private MCP knowledge server with RAG, citations, and optional x402 payment gating. |
+| `dirstral` | Interactive TUI client for dir2mcp knowledge bases. |
+
+## Source
+
+Releases are built and published automatically by [GoReleaser](https://goreleaser.com) from the [dir2mcp](https://github.com/Dirstral/dir2mcp) repository on every version tag.
